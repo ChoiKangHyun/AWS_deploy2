@@ -25,7 +25,7 @@ class HomeControllerTest {
     void hello() {
         System.out.println("port: " + port);
         ResponseEntity<String> response = testRestTemplate.getForEntity("/aws/v2", String.class);
-        assertThat("<h1>AWS 배포 v2</h1>").isEqualTo(response.getBody());
+        assertThat("<h1>아마존 v2</h1>").isEqualTo(response.getBody());
 
     }
 }
